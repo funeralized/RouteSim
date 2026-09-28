@@ -16,11 +16,16 @@ struct RootView: View {
 
     private var mainTabs: some View {
         TabView {
+            SpooferView()
+                .tabItem {
+                    Label("Spoof", systemImage: "location.fill")
+                }
+
             NavigationStack {
                 SimulateView()
             }
             .tabItem {
-                Label("Simulate", systemImage: "location.fill")
+                Label("Routes", systemImage: "figure.walk")
             }
 
             NavigationStack {
