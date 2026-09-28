@@ -1,4 +1,4 @@
- Build an unsigned Debug IPA for RouteSim (display name) from the StikDebug Xcode target.
+# Build an unsigned Debug IPA for RouteSim (display name) from the StikDebug Xcode target.
 #
 # Why scheme "StikDebug"?
 #   Xcode project/target/scheme kept as StikDebug for CI stability after the fork.
