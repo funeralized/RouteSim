@@ -75,6 +75,9 @@ jobs:
           echo "=== Xcode ==="
           xcodebuild -version
           xcodebuild -list -project "${{ env.PROJECT }}"
+          
+      - name: Install iOS platform
+        run: xcodebuild -downloadPlatform iOS
 
       - name: Archive (unsigned Debug, iphoneos)
         run: |
